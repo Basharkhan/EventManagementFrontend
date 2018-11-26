@@ -1,0 +1,28 @@
+
+    <div class="form3">
+        <h2 style="color: #C8C8C8">Create Event</h2>
+
+<form name="form" (ngSubmit)="saveEvent()" style="width:100%;">
+    <div class="form-group">
+        <label for="eventName">Name: </label>
+        <input type="text" class="form-control" name="eventName" placeholder="Enter name" [(ngModel)]="events.eventName">
+    </div>
+
+    <div class="form-group">
+      <label for="eventAddress">Address: </label>
+      <input type="text" class="form-control" name="eventAddress" placeholder="Enter address" [(ngModel)]="events.eventAddress">
+  </div>
+ 
+    <div class="form-group">
+            <label for="eventDescription">Description: </label>
+            <input type="text" class="form-control" name="eventDescription" placeholder="Enter description" [(ngModel)]="events.eventDescription">
+        </div>
+        <div class="form-group">
+                <label for="url">Photo Url: </label>
+                <input type="text" class="form-control" name="url" placeholder="Enter url" [(ngModel)]="events.url">
+            </div>
+        <div>{{today | date:'medium'}}</div>
+       
+    <button class="btn btn-primary" type="submit">Add</button>
+</form>
+</div>

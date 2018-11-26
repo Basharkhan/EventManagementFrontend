@@ -1,0 +1,7 @@
+<div class="container" *ngIf="event" style="color:#D3D3D3">
+    <h3>{{event.eventName}}</h3> 
+    <img src="{{event.url}}" width="513" height="350">
+    <p class="description">{{event.eventDescription}}</p>
+
+  <button (click)="getTicket()">Get Ticket</button>
+</div>

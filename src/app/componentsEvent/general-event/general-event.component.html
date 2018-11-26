@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-2 mb-1" *ngFor="let event of generalEvent">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{event.eventName}}</h5>
+          <p class="card-text">{{event.eventDescription}}</p>
+          <p></p>
+          <p>
+            <button class="btn btn-danger" (click) = "delete(event)">Delete</button>
+            <a href="/event-details/{{event.id}}" 
+            class="btn btn-success" style="position: relative;top: 4px">View Details</a>        
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>

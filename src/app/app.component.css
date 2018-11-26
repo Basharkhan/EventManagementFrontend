@@ -1,0 +1,20 @@
+.navbar{
+    background-color: #383838;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navbar-brand{
+    color: black;
+    font-family: sans-serif;
+    opacity: 0.5;
+}
+
+.form2 {
+    /* background-image: url("https://images.pexels.com/photos/1488393/pexels-photo-1488393.jpeg?cs=srgb&dl=bushes-clouds-cloudy-1488393.jpg&fm=jpg"); */
+    height: 589px; 
+    width: 1370px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+

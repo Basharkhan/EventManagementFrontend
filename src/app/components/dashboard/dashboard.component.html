@@ -1,0 +1,11 @@
+
+<div class="container" style="color: #A0A0A0">
+  <h5 >Your Information</h5>
+  <p>
+    <strong>Name: </strong> {{info.username}}<br>
+    <strong>Roles:</strong> {{info.authorities}}<br />
+  </p>
+  <h5 *ngIf="token.loggedIn() && token.loggedAdmin()">Click for User list</h5>
+  <a routerLink="/list" *ngIf="token.loggedIn() && token.loggedAdmin()" class="btn btn-secondary">List</a><br>
+</div>
+
